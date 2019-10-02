@@ -38,3 +38,22 @@ button {
   padding: 5px;
   font-size: 20px;
 }
+
+//calendar 2 styles
+
+//day styles:
+//    disabled/inactive - grayish
+//    newly activated/not clicked on - yellow/goldish OR red
+//    clicked on already - dark green
+
+table {
+  width: 90%;
+  margin: auto auto;
+  margin-top:25px;
+  td {
+  border: dashed 1px whitesmoke;
+  border-radius: 15px;
+  text-align: center;
+  padding:20px;
+}
+}

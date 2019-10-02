@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.scss';
-import Calendar from './Calendar'
-import Day from './Day'
+// import Calendar from './Calendar'
+import Calendar2 from './Calendar2'
+// import Day from './Day'
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
         <input type="password" className="password"/><br/>
         <button type="submit">Submit</button>
       </form> */}
-      <Calendar/>
+      {/* <Calendar/> */}
+      <Calendar2/>
     </div>
   );
 }
