@@ -1,43 +1,39 @@
-@import url('https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap');
-
-// html {
-//   background-color: #165b33;
-//   font-size: 24px;
-// }
+@import url("https://fonts.googleapis.com/css?family=Mountains+of+Christmas&display=swap");
 
 body {
-  font-family: 'Mountains of Christmas', cursive;
+  font-family: "Mountains of Christmas", cursive;
   color: whitesmoke;
   background-color: #165b33;
+  // background: linear-gradient(to bottom right, #165b33, #35985e, whitesmoke);
   font-size: 24px;
   font-weight: bold;
+
+  //------------------------------
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
 }
 
-form {
-  background-color: rgb(255, 247, 247);
-  width: 18%;
-  padding: 30px;
-  margin: auto auto;
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {
+    background-color: #3dc174;
+  }
+  to {
+    background-color: #165b33;
+  }
 }
 
-input {
-  padding: 10px;
-  margin: 20px;
+/* Standard syntax */
+@keyframes example {
+  from {
+    background-color: #3dc174;
+  }
+  to {
+    background-color: #165b33;
+  }
 }
-
-h1, h2 {
-  text-align: center;
-}
-
-h1 {
-  margin-top: 100px;
-}
-
-button {
-  width: 100%;
-  padding: 5px;
-  font-size: 20px;
-}
+//-----------------------------------
 
 //calendar 2 styles
 
@@ -45,15 +41,42 @@ button {
 //    disabled/inactive - grayish
 //    newly activated/not clicked on - yellow/goldish OR red
 //    clicked on already - dark green
+//    on-click:
 
-table {
-  width: 90%;
-  margin: auto auto;
-  margin-top:25px;
-  td {
-  border: dashed 1px whitesmoke;
-  border-radius: 15px;
-  text-align: center;
-  padding:20px;
-}
+.Calendar2 {
+  .calendar-table {
+    width: 90%;
+    margin: auto auto;
+    margin-top: 25px;
+    border-spacing: 10px;
+
+    &__day {
+      border-radius: 15px;
+      padding: 8%;
+      text-align: center;
+      margin: 10px;
+      font-size: 40px;
+
+      
+    }
+
+    &--day:disabled {
+      background-color: gray;
+    }
+
+    &--day:hover {
+      background-color: #3dc174;
+    }
+
+    &--red {
+      background-color: rgba(234, 12, 12, 0.633);
+      border: dashed 3px rgba(245, 245, 245, 0.66);
+    }
+
+    &--white {
+      background-color: rgba(245, 245, 245, 0.66);
+      border: dashed 3px rgba(234, 12, 12, 0.633);
+      color: rgba(234, 12, 12,0.8);
+    }
+  }
 }

@@ -11,62 +11,60 @@ export default class App extends Component {
     }
 
   }
-
-  goBack() {
-    this.setState({
-
-    })
+  
+  onClickDay() {
+console.log('clickity')
   }
 
   render() {
     return (
     <div className="Calendar2">
         <div className="DateCountdown">
-          <DateCountdown dateTo="December 1, 2019 00:00:00 GMT-05:00" />
+          {/* <DateCountdown dateTo="December 1, 2019 00:00:00 GMT-05:00" /> */}
         </div>
         <table className="calendar-table">
             <tr className="calendar-table__row">
-                <td className="calendar-table__day">1</td>
-                <td className="calendar-table__day">2</td>
-                <td className="calendar-table__day">3</td>
+                <td onClick={this.onClickDay} value={1} className="calendar-table__day calendar-table--red" disabled>1</td>
+                <td onClick={this.onClickDay} className="calendar-table__day calendar-table--red">2</td>
+                <td onClick={this.onClickDay} className="calendar-table__day calendar-table--red">3</td>
             </tr>
             <tr className="calendar-table__row">
-                <td className="calendar-table__day">4</td>
-                <td className="calendar-table__day">5</td>
-                <td className="calendar-table__day">6</td>
+                <td onClick={this.onClickDay} className="calendar-table__day calendar-table--white">4</td>
+                <td onClick={this.onClickDay} className="calendar-table__day calendar-table--white">5</td>
+                <td onClick={this.onClickDay} className="calendar-table__day calendar-table--white">6</td>
             </tr>
             <tr className="calendar-table__row">
-                <td className="calendar-table__day">7</td>
-                <td className="calendar-table__day">8</td>
-                <td className="calendar-table__day">9</td>
+                <td className="calendar-table__day calendar-table--red">7</td>
+                <td className="calendar-table__day calendar-table--red">8</td>
+                <td className="calendar-table__day calendar-table--red">9</td>
             </tr>
             <tr className="calendar-table__row">
-                <td className="calendar-table__day">10</td>
-                <td className="calendar-table__day">11</td>
-                <td className="calendar-table__day">12</td>
+                <td className="calendar-table__day calendar-table--white">10</td>
+                <td className="calendar-table__day calendar-table--white">11</td>
+                <td className="calendar-table__day calendar-table--white">12</td>
             </tr>
             <tr className="calendar-table__row">
-                <td className="calendar-table__day">13</td>
-                <td className="calendar-table__day">14</td>
-                <td className="calendar-table__day">15</td>
+                <td className="calendar-table__day calendar-table--red">13</td>
+                <td className="calendar-table__day calendar-table--red">14</td>
+                <td className="calendar-table__day calendar-table--red">15</td>
             </tr>
             <tr className="calendar-table__row">
-                <td className="calendar-table__day">16</td>
-                <td className="calendar-table__day">17</td>
-                <td className="calendar-table__day">18</td>
+                <td className="calendar-table__day calendar-table--white">16</td>
+                <td className="calendar-table__day calendar-table--white">17</td>
+                <td className="calendar-table__day calendar-table--white">18</td>
             </tr>
             <tr className="calendar-table__row">
-                <td className="calendar-table__day">19</td>
-                <td className="calendar-table__day">20</td>
-                <td className="calendar-table__day">21</td>
+                <td className="calendar-table__day calendar-table--red">19</td>
+                <td className="calendar-table__day calendar-table--red">20</td>
+                <td className="calendar-table__day calendar-table--red">21</td>
             </tr>
             <tr className="calendar-table__row">
-                <td className="calendar-table__day">22</td>
-                <td className="calendar-table__day">23</td>
-                <td className="calendar-table__day">24</td>
+                <td className="calendar-table__day calendar-table--white">22</td>
+                <td className="calendar-table__day calendar-table--white">23</td>
+                <td className="calendar-table__day calendar-table--white">24</td>
             </tr>
             <tr className="calendar-table__row">
-                <td  className="calendar-table__day" colSpan="3">25</td>
+                <td  className="calendar-table__day calendar-table--" colSpan="3">25</td>
             </tr>
         </table>
     </div>
