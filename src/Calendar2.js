@@ -24,14 +24,14 @@ console.log('clickity')
         </div>
         <table className="calendar-table">
             <tr className="calendar-table__row">
-                <td onClick={this.onClickDay} value={1} className="calendar-table__day calendar-table--red" disabled>1</td>
-                <td onClick={this.onClickDay} className="calendar-table__day calendar-table--red">2</td>
-                <td onClick={this.onClickDay} className="calendar-table__day calendar-table--red">3</td>
+                <td className="calendar-table__day calendar-table--red" disabled>1</td>
+                <td className="calendar-table__day calendar-table--red">2</td>
+                <td className="calendar-table__day calendar-table--red">3</td>
             </tr>
             <tr className="calendar-table__row">
-                <td onClick={this.onClickDay} className="calendar-table__day calendar-table--white">4</td>
-                <td onClick={this.onClickDay} className="calendar-table__day calendar-table--white">5</td>
-                <td onClick={this.onClickDay} className="calendar-table__day calendar-table--white">6</td>
+                <td className="calendar-table__day calendar-table--white">4</td>
+                <td className="calendar-table__day calendar-table--white">5</td>
+                <td className="calendar-table__day calendar-table--white">6</td>
             </tr>
             <tr className="calendar-table__row">
                 <td className="calendar-table__day calendar-table--red">7</td>
