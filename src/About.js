@@ -15,12 +15,10 @@ export default class Day extends Component {
 
   render() {
     return (
-      <div className="DayClass">
-      <button className="backButton" onClick={this.props.goBack.bind(this)}>back</button>
-        <p>this is day number {this.props.value}</p>
-        <p>name:   {this.props.name}</p>
-        <p>text:   {this.props.text}</p>
-        <p>icon:   {this.props.icon}</p>
+      <div className="About">
+                <button className="backButton" onClick={this.props.goBack.bind(this)}>back</button>
+
+          about
       </div>
     );
   }

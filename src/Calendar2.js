@@ -3,7 +3,8 @@ import { Component } from "react";
 import "./Calendar.scss";
 import Day from "./Day";
 import DateCountdown from "react-date-countdown-timer";
-import data from "./data.json";
+import data from "./data.jsonc";
+import About from "./About";
 
 export default class App extends Component {
   constructor(props) {
@@ -34,7 +35,9 @@ export default class App extends Component {
       isDay22Visible: false,
       isDay23Visible: false,
       isDay24Visible: false,
-      isDay25Visible: false
+      isDay25Visible: false,
+      isAboutVisible: false,
+      aboutCounter: 0
     };
     this.day1Click = this.day1Click.bind(this);
     this.day2Click = this.day2Click.bind(this);
@@ -61,10 +64,12 @@ export default class App extends Component {
     this.day23Click = this.day23Click.bind(this);
     this.day24Click = this.day24Click.bind(this);
     this.day25Click = this.day25Click.bind(this);
+    this.aboutClick = this.aboutClick.bind(this);
   }
 
   componentDidMount() {
     //   console.log(data.days[0].name)
+    // this.forceUpdate(this.aboutClick);
   }
 
   day1Click() {
@@ -72,7 +77,11 @@ export default class App extends Component {
       isCalendarVisible: false,
       isDayVisible: true,
       value: 1
+      //   text: this.data.days[0].text,
+      //   icon: this.data.days[0].icon
+      //   name: this.state.data.days[0].name
     });
+    // console.log("++++" + this.state.name)
   }
   day2Click() {
     this.setState({
@@ -194,7 +203,6 @@ export default class App extends Component {
     });
   }
   day19Click() {
-    console.log("clicked day 19 click");
     this.setState({
       isCalendarVisible: false,
       isDayVisible: true,
@@ -248,13 +256,28 @@ export default class App extends Component {
     this.setState({
       isCalendarVisible: true,
       isDayVisible: false,
-    })
+      isAboutVisible: false
+    });
   }
 
+  aboutClick() {
+    this.setState({
+      isCalendarVisible: false,
+      isDayVisible: false,
+      isAboutVisible: true,
+      aboutCounter: this.aboutCounter + 1
+    });
+  }
 
   render() {
     return (
       <div className="Calendar2">
+        <button onClick={this.aboutClick}></button>
+
+        {this.state.isAboutVisible ? (
+          <About goBack={this.goBack.bind(this)} />
+        ) : null}
+
         <div className="DateCountdown">
           {/* <DateCountdown dateTo="December 1, 2019 00:00:00 GMT-05:00" /> */}
         </div>
@@ -264,180 +287,167 @@ export default class App extends Component {
               <td
                 onClick={this.day1Click}
                 className="calendar-table__day calendar-table--red"
-                value={1}
               >
                 1
               </td>
               <td
                 onClick={this.day2Click}
                 className="calendar-table__day calendar-table--red"
-                value={2}
               >
                 2
               </td>
               <td
                 onClick={this.day3Click}
                 className="calendar-table__day calendar-table--red"
-                value={3}
               >
                 3
               </td>
             </tr>
             <tr className="calendar-table__row">
               <td
-              onClick={this.day4Click}
+                onClick={this.day4Click}
                 className="calendar-table__day calendar-table--white"
-                value={4}
               >
                 4
               </td>
               <td
-              onClick={this.day5Click}
+                onClick={this.day5Click}
                 className="calendar-table__day calendar-table--white"
-                value={5}
               >
                 5
               </td>
               <td
-              onClick={this.day6Click}
+                onClick={this.day6Click}
                 className="calendar-table__day calendar-table--white"
-                value={6}
               >
                 6
               </td>
             </tr>
             <tr className="calendar-table__row">
-              <td onClick={this.day7Click} className="calendar-table__day calendar-table--red" value={7}>
+              <td
+                onClick={this.day7Click}
+                className="calendar-table__day calendar-table--red"
+              >
                 7
               </td>
-              <td onClick={this.day8Click} className="calendar-table__day calendar-table--red" value={8}>
+              <td
+                onClick={this.day8Click}
+                className="calendar-table__day calendar-table--red"
+              >
                 8
               </td>
-              <td onClick={this.day9Click} className="calendar-table__day calendar-table--red" value={9}>
+              <td
+                onClick={this.day9Click}
+                className="calendar-table__day calendar-table--red"
+              >
                 9
               </td>
             </tr>
             <tr className="calendar-table__row">
               <td
-              onClick={this.day10Click}
+                onClick={this.day10Click}
                 className="calendar-table__day calendar-table--white"
-                value={10}
               >
                 10
               </td>
               <td
-              onClick={this.day11Click}
+                onClick={this.day11Click}
                 className="calendar-table__day calendar-table--white"
-                value={11}
               >
                 11
               </td>
               <td
-              onClick={this.day12Click}
+                onClick={this.day12Click}
                 className="calendar-table__day calendar-table--white"
-                value={12}
               >
                 12
               </td>
             </tr>
             <tr className="calendar-table__row">
               <td
-              onClick={this.day13Click}
+                onClick={this.day13Click}
                 className="calendar-table__day calendar-table--red"
-                value={13}
               >
                 13
               </td>
               <td
-              onClick={this.day14Click}
+                onClick={this.day14Click}
                 className="calendar-table__day calendar-table--red"
-                value={14}
               >
                 14
               </td>
               <td
-              onClick={this.day15Click}
+                onClick={this.day15Click}
                 className="calendar-table__day calendar-table--red"
-                value={15}
               >
                 15
               </td>
             </tr>
             <tr className="calendar-table__row">
               <td
-              onClick={this.day16Click}
+                onClick={this.day16Click}
                 className="calendar-table__day calendar-table--white"
-                value={16}
               >
                 16
               </td>
               <td
-              onClick={this.day17Click}
+                onClick={this.day17Click}
                 className="calendar-table__day calendar-table--white"
-                value={17}
               >
                 17
               </td>
               <td
-              onClick={this.day18Click}
+                onClick={this.day18Click}
                 className="calendar-table__day calendar-table--white"
-                value={18}
               >
                 18
               </td>
             </tr>
             <tr className="calendar-table__row">
               <td
-              onClick={this.day19Click}
+                onClick={this.day19Click}
                 className="calendar-table__day calendar-table--red"
-                value={19}
               >
                 19
               </td>
               <td
-              onClick={this.day20Click}
+                onClick={this.day20Click}
                 className="calendar-table__day calendar-table--red"
-                value={20}
               >
                 20
               </td>
               <td
-              onClick={this.day21Click}
+                onClick={this.day21Click}
                 className="calendar-table__day calendar-table--red"
-                value={21}
               >
                 21
               </td>
             </tr>
             <tr className="calendar-table__row">
               <td
-              onClick={this.day22Click}
+                onClick={this.day22Click}
                 className="calendar-table__day calendar-table--white"
-                value={22}
               >
                 22
               </td>
               <td
-              onClick={this.day23Click}
+                onClick={this.day23Click}
                 className="calendar-table__day calendar-table--white"
-                value={23}
               >
                 23
               </td>
               <td
-              onClick={this.day24Click}
+                onClick={this.day24Click}
                 className="calendar-table__day calendar-table--white"
-                value={24}
               >
                 24
               </td>
             </tr>
             <tr className="calendar-table__row">
               <td
-              onClick={this.day25Click}
+                onClick={this.day25Click}
                 className="calendar-table__day calendar-table--"
                 colSpan="3"
-                value={25}
               >
                 25
               </td>
@@ -455,16 +465,16 @@ export default class App extends Component {
           //     <div className="postAbout">post</div>
           //     {/* <button className="backButton" onClick={this.goBack.bind(this)}>back</button> */}
           //   </div>
-        //    <button className="backButton" onClick={this.goBack.bind(this)}>back</button>
-          <Day 
-          value={this.state.value}
-          isDayVisible={this.state.isDayVisible}
-          isCalendarVisible={this.state.isCalendarVisible}
-          goBack={this.goBack.bind(this)}
+          //    <button className="backButton" onClick={this.goBack.bind(this)}>back</button>
+          <Day
+            value={this.state.value}
+            name={this.state.name}
+            text={this.state.text}
+            icon={this.state.icon}
+            isDayVisible={this.state.isDayVisible}
+            isCalendarVisible={this.state.isCalendarVisible}
+            goBack={this.goBack.bind(this)}
           />
-
-         
-
         ) : null}
       </div>
     );
