@@ -82,6 +82,23 @@ body {
 }
 
 .About {
-  background-color: lavender;
+  background-color: #3dc174;
   padding:1em;
+  border: 5px whitesmoke dashed;
+  margin: 2em;
+  border-radius: 25px;
+  font-size: 30px;
+  text-shadow: 1px 1px gray;
+}
+
+.AboutButton {
+  background-color: goldenrod;
+  border: 2px dashed whitesmoke;
+  display: block;
+  margin: auto auto;
+  color: white;
+  padding: 1em;
+  border-radius: 15px;
+  margin-top: 25px;
+  font-size: 14px;
 }

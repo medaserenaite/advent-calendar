@@ -2,7 +2,7 @@
     "days": [
         {
             "id": 1,
-            "name": "Jason tastes American Eclair cake made by Lithuanian hands (and the unplanned stomach ache)",
+            "name": "Jason's obsession OR Meda's worst nightmare",
             // "dovana":"eclair cake",
             // "vidinis komentaras":"because you love it",
             "text": "",
@@ -10,7 +10,7 @@
         },
         {
             "id": 2,
-            "name": "Jason meets the Polish store OR no pressure - meet my dad",
+            "name": "Jason meets the Polish store OR No pressure, gurlfren - meet my dad",
             // "dovana":"milka",
             // "vidinis komentaras":"this was your best discovery ???",
             "text": "day 2 paragraph text lorem ipsum......",
@@ -26,7 +26,7 @@
         },
         {
             "id": 4,
-            "name": "Remember our first date? OR am I the reason you drink?",
+            "name": "Remember our first date? OR Am I the reason you drink?",
             // "dovana":"beer(hopefully from haymarket?"",
             // "vidinis komentaras":"best day ever",
             "text": "",
@@ -50,61 +50,71 @@
         },
         {
             "id": 7,
-            "name": "",
+            "name": "Jason’s obsession w/ Macca or Meda meets America",
+            // "dovana":"macca's card",
             "text": "",
             "icon": "/#"
         },
         {
             "id": 8,
-            "name": "",
+            "name": "For the love of BB or Let’s cook some quesadillas",
+            // "dovana":"BB apron",
             "text": "",
             "icon": "/#"
         },
         {
             "id": 9,
-            "name": "",
+            "name": "Let's call this a cabin OR [rename]",
+            // "dovana":"lame beer",
             "text": "",
             "icon": "/#"
         },
         {
             "id": 10,
-            "name": "",
+            "name": "random ---think of the story to put here",
+            // "dovana":"twix",
             "text": "",
             "icon": "/#"
         },
         {
             "id": 11,
-            "name": "",
+            "name": "ATB OR reverse the roles",
+            // "dovana":"clothing item for ATB",
             "text": "",
             "icon": "/#"
         },
         {
             "id": 12,
-            "name": "",
+            "name": "I like hot sauce, yes I do OR I like you more",
+            // "dovana":"hot sauce",
             "text": "",
             "icon": "/#"
         },
         {
             "id": 13,
             "name": "Lolla, TOP and AJR -- [fixed]",
+            // "dovana:"TOP bracelet (matching? )",
             "text": "",
             "icon": "/#"
         },
         {
             "id": 14,
-            "name": "The most uncomfortable day OR The HOUSE Weekend",
+            "name": "red ketchup or Pressure me much",
+            // "dovana" : "kitkat"
             "text": "",
             "icon": "/#"
         },
         {
             "id": 15,
             "name": "",
+            // "dovana" : "WTM bracelet"
             "text": "",
             "icon": "/#"
         },
         {
             "id": 16,
             "name": "",
+            // "dovana" : "WTM shirt"
             "text": "",
             "icon": "/#"
         },

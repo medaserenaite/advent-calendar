@@ -37,7 +37,8 @@ export default class App extends Component {
       isDay24Visible: false,
       isDay25Visible: false,
       isAboutVisible: false,
-      aboutCounter: 0
+      aboutCounter: 0,
+      isThisButtonVisible: true,
     };
     this.day1Click = this.day1Click.bind(this);
     this.day2Click = this.day2Click.bind(this);
@@ -256,7 +257,8 @@ export default class App extends Component {
     this.setState({
       isCalendarVisible: true,
       isDayVisible: false,
-      isAboutVisible: false
+      isAboutVisible: false,
+      isThisButtonVisible: true,
     });
   }
 
@@ -265,14 +267,16 @@ export default class App extends Component {
       isCalendarVisible: false,
       isDayVisible: false,
       isAboutVisible: true,
-      aboutCounter: this.aboutCounter + 1
+      isThisButtonVisible: false,
     });
   }
 
   render() {
     return (
       <div className="Calendar2">
-        <button onClick={this.aboutClick}></button>
+          {this.state.isThisButtonVisible ? (
+        <button className="AboutButton" onClick={this.aboutClick}>what is this?</button>
+          ) :null}
 
         {this.state.isAboutVisible ? (
           <About goBack={this.goBack.bind(this)} />
