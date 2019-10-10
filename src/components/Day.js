@@ -20,10 +20,10 @@ export default class Day extends Component {
       <div className="Day">
         <img className="Day__image" src="https://via.placeholder.com/150" alt=""/>
         <div className="Day__material">
-        <p>Day {this.props.value}</p>
-        <p>{this.props.name}</p>
-        <p>{this.props.text}</p>
-        {/* <p>icon:{this.props.icon}</p> */}
+          <p className="Day__number">Day {this.props.value}</p>
+          <p className="Day__name">{this.props.name}</p>
+          <p className="Day__text">{this.props.text}</p>
+          <p className="Day_icon"></p>
         </div>
         <button className="backButton" onClick={this.props.goBack.bind(this)}>back</button>
       </div>

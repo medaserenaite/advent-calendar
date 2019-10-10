@@ -3,96 +3,118 @@
         {
             "id": 1,
             "name": "Jason's obsession OR Meda's worst nightmare",
-            "text": "To start of the best time of the year, I thought I'd make you something you like. I'll never forget your happy face, when you had it.",
-            "icon": "gymnastics face?"
+            // "dovana":"eclair cake",
+            // "vidinis komentaras":"because you love it",
+            "text": "",
+            "icon": "/#"
         },
         {
             "id": 2,
             "name": "Jason meets the Polish store OR No pressure, gurlfren - meet my dad",
-            "text": "As you know, I am not a relationship expert, BUT I've noticed that people don't make they SOs meeting their paternals only weeks in their relationship. But you know what? WE're not normal and screw the expectations. Even though I was having invisible scared-poos in my belly, I really enjoyed meeting your dad and Debbie. And now, go open your present, which hopefully will remind you of the ending of the day, when you met Mr. Polish store.",
+            // "dovana":"milka",
+            // "vidinis komentaras":"this was your best discovery ???",
+            "text": "day 2 paragraph text lorem ipsum......",
             "icon": "/#"
         },
         {
             "id": 3,
             "name": "His obsession with sweets OR don't trust a person who doesn't like chocolate",
+            // "dovana":"cocoa and marshmallows",
+            // "vidinis komentaras":"I'm slowly making you vegan ?????",
             "text": "",
             "icon": "/#"
         },
         {
             "id": 4,
             "name": "Remember our first date? OR Am I the reason you drink?",
+            // "dovana":"beer(hopefully from haymarket?"",
+            // "vidinis komentaras":"best day ever",
             "text": "",
             "icon": "/#"
         },
         {
             "id": 5,
             "name": "To Jason, for dealing with my blackout and still being with me -- (rename)",
+            // "dovana":"maziukas tito's",
+            // "vidinis komentaras":"because grapefruit and rose don't belong in vodka",
             "text": "",
             "icon": "/#"
         },
         {
             "id": 6,
             "name": "To the days we did nothing and it was great",
+            // "dovana":"coupons",
+            // "vidinis komentaras":"to make nothing-days a little more interesting? ",
             "text": "",
             "icon": "/#"
         },
         {
             "id": 7,
             "name": "Jason’s obsession w/ Macca or Meda meets America",
+            // "dovana":"macca's card",
             "text": "",
             "icon": "/#"
         },
         {
             "id": 8,
             "name": "For the love of BB or Let’s cook some quesadillas",
+            // "dovana":"BB apron",
             "text": "",
             "icon": "/#"
         },
         {
             "id": 9,
             "name": "Let's call this a cabin OR [rename]",
+            // "dovana":"lame beer",
             "text": "",
             "icon": "/#"
         },
         {
             "id": 10,
             "name": "random ---think of the story to put here",
+            // "dovana":"twix",
             "text": "",
             "icon": "/#"
         },
         {
             "id": 11,
             "name": "ATB OR reverse the roles",
+            // "dovana":"clothing item for ATB",
             "text": "",
             "icon": "/#"
         },
         {
             "id": 12,
             "name": "I like hot sauce, yes I do OR I like you more",
+            // "dovana":"hot sauce",
             "text": "",
             "icon": "/#"
         },
         {
             "id": 13,
             "name": "Lolla, TOP and AJR -- [fixed]",
+            // "dovana:"TOP bracelet (matching? )",
             "text": "",
             "icon": "/#"
         },
         {
             "id": 14,
             "name": "red ketchup or Pressure me much",
+            // "dovana" : "kitkat"
             "text": "",
             "icon": "/#"
         },
         {
             "id": 15,
             "name": "",
+            // "dovana" : "WTM bracelet"
             "text": "",
             "icon": "/#"
         },
         {
             "id": 16,
             "name": "",
+            // "dovana" : "WTM shirt"
             "text": "",
             "icon": "/#"
         },
@@ -122,7 +144,7 @@
         },
         {
             "id": 21,
-            "name": "I fly out but you're on my mind -- [fixed, rename] (flight day)",
+            "name": "I fly out but you're on my mind -- [fixed] (flight day)",
             "text": "",
             "icon": "/#"
         },

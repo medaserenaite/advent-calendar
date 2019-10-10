@@ -360,7 +360,7 @@ export default class Calendar extends Component {
       <div className="Calendar2">
         {this.state.isThisButtonVisible ? (
           <button className="AboutButton" onClick={this.aboutClick}>
-            what is this?
+            ?
           </button>
         ) : null}
 

@@ -95,15 +95,28 @@ body {
   background-color: goldenrod;
   border: 2px dashed whitesmoke;
   display: block;
-  margin: auto auto;
+  float: right;
   color: white;
   padding: 1em;
-  border-radius: 15px;
-  margin-top: 25px;
+  border-radius: 25px;
+  margin: 25px;
+  margin-top: -10px;
   font-size: 14px;
+  opacity: 0.7;
+  height: 50px;
+  width: 50px;
+  font-style: bold;
 }
 
-.DateCountdown {
+.AboutButton:hover {
+  opacity: 1;
+}
+
+.AboutButton:active {
+  opacity: 1;
+}
+
+// .DateCountdown {
 // border:solid 1px yellow;
 // width: 120%;
-}
+// }

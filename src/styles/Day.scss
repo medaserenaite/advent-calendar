@@ -1,20 +1,62 @@
+// @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
+// @import url("https://fonts.googleapis.com/css?family=Arvo&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Dosis&display=swap");
+
+
 .Day {
     padding: 1em;
-    width: 80%;
+    width: 100%;
     margin: auto auto;
 
     &__image {
         display: block;
         margin: auto auto;
+        width: 100%;
+        margin-bottom: 10px;
     }
     &__material {
-        border:solid 1px gray;
+        border: dashed 5px rgba(245, 245, 245, 0.379);
+        padding:20px;
+        border-radius: 25px;
+    }
+
+    &__number, &__name {
+        text-align: center;
+    }
+
+    &__name {
+        color: rgba(132, 11, 11, 0.797);
+        text-shadow: -3px -3px 10px rgba(255, 252, 252, 0.66);
+        font-size: 30px;
+    }
+
+    &__text {
+        display: block;
+        font-family: "Dosis";
+        letter-spacing: 2px;
+        font-size: 20px;
+        text-align: justify;
+        // text-shadow: 1px 1px rgb(40, 40, 40);
+    }
+
+    &__icon {
+        display: block;
+        margin: auto auto;
+        height: 100px;
+        width: 100px;
+        border-radius: 50px;
+        background: url("https://via.placeholder.com/150");
+    }
+    &__icon:active {
+        background-image: url("")
     }
 
     .backButton {
         background-color: goldenrod;
         border: 2px dashed whitesmoke;
         display: block;
+        margin: auto auto;
+        margin-top:20px;
         color: white;
         padding: 1em;
         border-radius: 15px;
