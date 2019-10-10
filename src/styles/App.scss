@@ -60,11 +60,11 @@ body {
       
     }
 
-    &--day:disabled {
-      background-color: gray;
-    }
+    // &--day:disabled {
+    //   background-color: gray;
+    // }
 
-    &--day:hover {
+    &--day:active {
       background-color: #3dc174;
     }
 
@@ -101,4 +101,9 @@ body {
   border-radius: 15px;
   margin-top: 25px;
   font-size: 14px;
+}
+
+.DateCountdown {
+// border:solid 1px yellow;
+// width: 120%;
 }

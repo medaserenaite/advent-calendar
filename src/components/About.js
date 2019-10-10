@@ -1,6 +1,5 @@
 import React from "react";
 import { Component } from 'react'
-import data from './data.jsonc'
 
 export default class Day extends Component {
     constructor(props) {
@@ -10,7 +9,7 @@ export default class Day extends Component {
       }
 
       componentDidMount() {
-          
+
       }
 
   render() {
