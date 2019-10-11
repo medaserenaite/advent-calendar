@@ -1,5 +1,7 @@
 import React from "react";
 import { Component } from 'react'
+import "../styles/About.scss";
+
 
 export default class Day extends Component {
     constructor(props) {

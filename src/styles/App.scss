@@ -8,115 +8,28 @@ body {
   font-size: 24px;
   font-weight: bold;
 
-  //------------------------------
+  // -------------- [ GREEN COLOR BECOMING BRIGHTER EFFECT ON LOAD ]-----------------------------
   -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
   animation-name: example;
   animation-duration: 4s;
-}
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes example {
-  from {
-    background-color: #3dc174;
-  }
-  to {
-    background-color: #165b33;
-  }
-}
-
-/* Standard syntax */
-@keyframes example {
-  from {
-    background-color: #3dc174;
-  }
-  to {
-    background-color: #165b33;
-  }
-}
-//-----------------------------------
-
-//calendar 2 styles
-
-//day styles:
-//    disabled/inactive - grayish
-//    newly activated/not clicked on - yellow/goldish OR red
-//    clicked on already - dark green
-//    on-click:
-
-.Calendar2 {
-  .calendar-table {
-    width: 90%;
-    margin: auto auto;
-    margin-top: 25px;
-    border-spacing: 10px;
-
-    &__day {
-      border-radius: 15px;
-      padding: 8%;
-      text-align: center;
-      margin: 10px;
-      font-size: 40px;
-
-      
-    }
-
-    // &--day:disabled {
-    //   background-color: gray;
-    // }
-
-    &--day:active {
+  /* Safari 4.0 - 8.0 */
+  @-webkit-keyframes example {
+    from {
       background-color: #3dc174;
     }
-
-    &--red {
-      background-color: rgba(234, 12, 12, 0.633);
-      border: dashed 3px rgba(245, 245, 245, 0.66);
-    }
-
-    &--white {
-      background-color: rgba(245, 245, 245, 0.66);
-      border: dashed 3px rgba(234, 12, 12, 0.633);
-      color: rgba(234, 12, 12,0.8);
+    to {
+      background-color: #165b33;
     }
   }
+  /* Standard syntax */
+  @keyframes example {
+    from {
+      background-color: #3dc174;
+    }
+    to {
+      background-color: #165b33;
+    }
+  }
+  //---------------------------------------------------------------------------------------------
 }
-
-.About {
-  background-color: #3dc174;
-  padding:1em;
-  border: 5px whitesmoke dashed;
-  margin: 2em;
-  border-radius: 25px;
-  font-size: 30px;
-  text-shadow: 1px 1px gray;
-}
-
-.AboutButton {
-  background-color: goldenrod;
-  border: 2px dashed whitesmoke;
-  display: block;
-  float: right;
-  color: white;
-  padding: 1em;
-  border-radius: 25px;
-  margin: 25px;
-  margin-top: -10px;
-  font-size: 14px;
-  opacity: 0.7;
-  height: 50px;
-  width: 50px;
-  font-style: bold;
-}
-
-.AboutButton:hover {
-  opacity: 1;
-}
-
-.AboutButton:active {
-  opacity: 1;
-}
-
-// .DateCountdown {
-// border:solid 1px yellow;
-// width: 120%;
-// }

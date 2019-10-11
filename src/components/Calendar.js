@@ -374,9 +374,9 @@ export default class Calendar extends Component {
         {this.state.isCalendarVisible ? (
           <table className="calendar-table">
             <tr className="calendar-table__row">
-              <td onClick={this.day1Click} className="dayday calendar-table__day calendar-table--red">1</td>
-              <td onClick={this.day2Click} className="dayday calendar-table__day calendar-table--red">2</td>
-              <td onClick={this.day3Click} className="dayday calendar-table__day calendar-table--red">3</td>
+              <td onClick={this.day1Click} className="calendar-table__day calendar-table--red">1</td>
+              <td onClick={this.day2Click} className="calendar-table__day calendar-table--red">2</td>
+              <td onClick={this.day3Click} className="calendar-table__day calendar-table--red">3</td>
             </tr>
             <tr className="calendar-table__row">
               <td onClick={this.day4Click} className="calendar-table__day calendar-table--white">4</td>

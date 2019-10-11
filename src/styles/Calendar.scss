@@ -1,131 +1,61 @@
-$table-header: #bb2528;
-$table-header-border: #d9d9d9;
-$table-border: #d9d9d9;
-$row-bg: #f4f2f1;
-$button-active: #146b3a;
+// $table-header: #bb2528;
+// $table-header-border: #d9d9d9;
+// $table-border: #d9d9d9;
+// $row-bg: #f4f2f1;
+// $button-active: #146b3a;
 
-div {
-  box-sizing: border-box;
-}
+// // ----------------------------- [        DESKTOP VIEW        ]-----------------------------
 
-.table-container {
-  display: block;
-  margin: 2em auto;
-  width: 90%;
-  max-width: 800px;
-  background-color: #1e412d;
-}
-
-.flex-table {
-  display: flex;
-  flex-flow: row wrap;
-  border-left: solid 1px $table-border;
-  &:first-of-type {
-    border-top: solid 1px $table-header-border;
-    border-left: solid 1px $table-header-border;
-  }
-  &:first-of-type .flex-row {
-    background: $table-header;
-    color: white;
-    border-color: $table-header-border;
-  }
-}
-
-.flex-row {
-  width: calc(100% / 7);
-  text-align: center;
-  padding: 0.5em 0.5em;
-  border-right: solid 1px $table-border;
-  border-bottom: solid 1px $table-border;
-}
-
-.flex-row:hover {
-  background-color: rgba(255, 255, 0, 0.235);
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.rowspan {
-  display: flex;
-  flex-flow: row wrap;
-  align-items: flex-start;
-  justify-content: center;
-}
-
-.column {
-  display: flex;
-  flex-flow: column wrap;
-  width: 75%;
-  padding: 0;
-  .flex-row {
-    display: flex;
-    flex-flow: row wrap;
-    width: 100%;
-    padding: 0;
-    border: 0;
-    border-bottom: solid 1px $table-border;
-  }
-}
-
-.flex-cell {
-  width: calc(100% / 3); //1px = border right
-  text-align: center;
-  padding: 0.5em 0.5em;
-  border-right: solid 1px $table-border;
-
-  .cell {
-    background-color: pink;
-  }
-
-  .cell:hover {
-    background-color: white;
-  }
-}
-.flex-row .empty {
-  background-color: gray;
-}
-
-// ----------------------------- [       MOBILE VIEW        ]-----------------------------
+// // ----------------------------- [        MOBILE VIEW         ]-----------------------------
 @media all and (max-width: 500px) {
-  .flex-row {
-    width: 100%;
-    padding-top: 20px;
-    padding-bottom: 20px;
-  }
+  .Calendar2 {
+    .AboutButton {
+      background-color: goldenrod;
+      border: 2px dashed whitesmoke;
+      display: block;
+      float: right;
+      color: white;
+      padding: 1em;
+      border-radius: 25px;
+      margin: 25px;
+      font-size: 14px;
+      opacity: 0.7;
+      height: 50px;
+      width: 50px;
+      font-style: bold;
 
-  .empty {
-    display: none;
-  }
+      &:hover {
+        opacity: 1;
+      }
 
-  .DateCountdown {
-    width: 50%;
-    text-align: center;
-    margin: auto auto;
-    padding: 20px;
-    margin-top: 30px;
-  }
+      &:active {
+        opacity: 1;
+      }
+    }
 
-  .post {
-    background-color: #146b3a;
-    width: 90%;
-    margin: auto auto;
-    padding: 10px;
-    // display: flex;
-    // flex-direction: row;
-  }
+    .calendar-table {
+      width: 90%;
+      margin: auto auto;
+      border-spacing: 10px;
 
-  .image {
-    width: 100%;
-    height: 300px;
-    // background-color: gray;
-    border: solid 1px #bb2528;
-  }
+      &__day {
+        border-radius: 15px;
+        padding: 8%;
+        text-align: center;
+        margin: 10px;
+        font-size: 40px;
+      }
 
-  .DayHeading {
-    text-align: center;
-  }
+      &--red {
+        background-color: rgba(234, 12, 12, 0.633);
+        border: dashed 3px rgba(245, 245, 245, 0.66);
+      }
 
-  .postAbout {
-    text-align: center;
+      &--white {
+        background-color: rgba(245, 245, 245, 0.66);
+        border: dashed 3px rgba(234, 12, 12, 0.633);
+        color: rgba(234, 12, 12, 0.8);
+      }
+    }
   }
 }
