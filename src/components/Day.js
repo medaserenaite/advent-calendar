@@ -18,10 +18,10 @@ export default class Day extends Component {
   render() {
     return (
       <div className="Day">
-        <img className="Day__image" src="https://via.placeholder.com/150" alt=""/>
         <div className="Day__material">
           <p className="Day__number">Day {this.props.value}</p>
           <p className="Day__name">{this.props.name}</p>
+          <img className="Day__image" src="https://via.placeholder.com/150" alt=""/>
           <p className="Day__text">{this.props.text}</p>
           <p className="Day_icon"></p>
         </div>

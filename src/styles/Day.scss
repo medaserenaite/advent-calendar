@@ -11,8 +11,10 @@
     &__image {
         display: block;
         margin: auto auto;
-        width: 100%;
+        width: 80%;
         margin-bottom: 10px;
+        border-radius: 25px;
+        opacity: 0.9;
     }
     &__material {
         border: dashed 5px rgba(245, 245, 245, 0.379);
