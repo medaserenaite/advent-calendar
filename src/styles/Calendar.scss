@@ -59,3 +59,99 @@
     }
   }
 }
+@media all and (min-width: 501px) {
+  .Calendar2 {
+    .AboutButton {
+      background-color: goldenrod;
+      border: 2px dashed whitesmoke;
+      display: block;
+      float: right;
+      color: white;
+      padding: 1em;
+      border-radius: 25px;
+      margin: 25px;
+      font-size: 14px;
+      opacity: 0.7;
+      height: 50px;
+      width: 50px;
+      font-style: bold;
+
+      &:hover {
+        opacity: 1;
+      }
+
+      &:active {
+        opacity: 1;
+      }
+    }
+
+    .calendar-table {
+      padding-top: 10%;
+      width: 40%;
+      margin: auto auto;
+      border-spacing: 10px;
+
+      &__day {
+        border-radius: 15px;
+        padding: 8%;
+        text-align: center;
+        margin: 10px;
+        font-size: 40px;
+      }
+
+      &--red {
+        background-color: rgba(234, 12, 12, 0.633);
+        border: dashed 3px rgba(245, 245, 245, 0.66);
+      }
+
+      &--white {
+        background-color: rgba(245, 245, 245, 0.66);
+        border: dashed 3px rgba(234, 12, 12, 0.633);
+        color: rgba(234, 12, 12, 0.8);
+      }
+    }
+  }
+}
+
+// // ----------------------------- [        SNOW       ]-----------------------------
+
+// .editor-stage .snow {
+//   height:50px;
+//   background: #fff;
+// }
+// .snow{
+//   position:fixed;
+//   pointer-events:none;
+//   top:0;
+//   left:0;
+//   right:0;
+//   bottom:0;
+//   height:100vh;
+//   background: none;
+//   background-image: url('https://s3-eu-west-1.amazonaws.com/static-ressources/s1.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s2.png'), url('https://s3-eu-west-1.amazonaws.com/static-ressources/s3.png');
+//   z-index:100;
+//   -webkit-animation: snow 10s linear infinite;
+//   -moz-animation: snow 10s linear infinite;
+//   -ms-animation: snow 10s linear infinite;
+//   animation: snow 10s linear infinite;
+// }
+// @keyframes snow {
+//   0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+//   50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+//   100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+// }
+// @-moz-keyframes snow {
+//   0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+//   50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+//   100% {background-position: 400px 1000px, 200px 400px, 100px 300px;}
+// }
+// @-webkit-keyframes snow {
+//   0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+//   50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+//   100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+// }
+// @-ms-keyframes snow {
+//   0% {background-position: 0px 0px, 0px 0px, 0px 0px;}
+//   50% {background-position: 500px 500px, 100px 200px, -100px 150px;}
+//   100% {background-position: 500px 1000px, 200px 400px, -100px 300px;}
+// }
