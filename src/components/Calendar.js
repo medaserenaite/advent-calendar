@@ -16,7 +16,12 @@ export default class Calendar extends Component {
       isCalendarVisible: true,
       isAboutVisible: false,
       aboutCounter: 0,
-      isThisButtonVisible: true
+      isThisButtonVisible: true,
+      today: 0,
+      year: 0,
+      month: 0,
+      day: 0,
+      todayIsCorrectDay:'',
     };
     this.day1Click = this.day1Click.bind(this);
     this.day2Click = this.day2Click.bind(this);
@@ -44,15 +49,30 @@ export default class Calendar extends Component {
     this.day24Click = this.day24Click.bind(this);
     this.day25Click = this.day25Click.bind(this);
     this.aboutClick = this.aboutClick.bind(this);
+    
   }
 
   componentDidMount() {
+    var today = new Date();
+    this.setState({
+      year:today.getFullYear(),
+      month:today.getMonth()+1,
+      day:today.getDate(),
+      today:this.state.today,
+    })
+
     //   console.log(data.days[0].name)
     // console.log(data.days[0].id)
     // this.forceUpdate(this.aboutClick);
     // var today = new Date();
     // console.log("today:     " + today)
     // var future = new Date();
+    // var year = today.getFullYear();
+    // var month = today.getMonth()+1;
+    // var day = today.getDate();
+    // console.log(year)
+    // console.log(month)
+    // console.log(day)
     // var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
     // console.log("date " + date)
     // if(today.getFullYear() === 2019 && today.getMonth() === 10 && today.getDate() === 9) {
@@ -73,8 +93,28 @@ export default class Calendar extends Component {
       name: data.days[0].name,
       text: data.days[0].text,
       icon: data.days[0].icon,
-      isThisButtonVisible: false
+      isThisButtonVisible: false,
+      today: this.state.today,
+      year: this.state.year,
+      month: this.state.month,
+      day: this.state.day,
+      todayIsCorrectDay: this.state.todayIsCorrectDay,
     });
+    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day >= 1)) {
+      console.log(true)
+      this.setState({
+        todayIsCorrectDay: true,
+      })
+      // console.log("!!!  " + this.state.todayIsCorrectDay)
+    } else {
+      console.log(false)
+      console.log(true)
+      this.setState({
+        todayIsCorrectDay: false,
+      })
+    }
+
+      console.log("!!!  " + this.state.todayIsCorrectDay)
   }
   day2Click() {
     this.setState({
@@ -84,8 +124,15 @@ export default class Calendar extends Component {
       name: data.days[1].name,
       text: data.days[1].text,
       icon: data.days[1].icon,
-      isThisButtonVisible: false
+      isThisButtonVisible: false,
     });
+    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 2)) {
+      console.log(true)
+      document.getElementById('day').style = 'hidden';
+    } else {
+      console.log(false)
+    }
+
   }
   day3Click() {
     this.setState({
@@ -97,6 +144,12 @@ export default class Calendar extends Component {
       icon: data.days[2].icon,
       isThisButtonVisible: false
     });
+    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 3)) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+
   }
   day4Click() {
     this.setState({
@@ -108,6 +161,12 @@ export default class Calendar extends Component {
       icon: data.days[3].icon,
       isThisButtonVisible: false
     });
+    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 4)) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+
   }
   day5Click() {
     this.setState({
@@ -119,6 +178,12 @@ export default class Calendar extends Component {
       icon: data.days[4].icon,
       isThisButtonVisible: false
     });
+        if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 5)) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+
   }
   day6Click() {
     this.setState({
@@ -130,6 +195,12 @@ export default class Calendar extends Component {
       icon: data.days[5].icon,
       isThisButtonVisible: false
     });
+    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 6)) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+
   }
   day7Click() {
     this.setState({
@@ -141,6 +212,12 @@ export default class Calendar extends Component {
       icon: data.days[6].icon,
       isThisButtonVisible: false
     });
+    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 7)) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+
   }
   day8Click() {
     this.setState({
@@ -152,6 +229,12 @@ export default class Calendar extends Component {
       icon: data.days[7].icon,
       isThisButtonVisible: false
     });
+    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 8)) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+
   }
   day9Click() {
     this.setState({
@@ -163,6 +246,12 @@ export default class Calendar extends Component {
       icon: data.days[8].icon,
       isThisButtonVisible: false
     });
+    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 9)) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+
   }
   day10Click() {
     this.setState({
@@ -174,6 +263,12 @@ export default class Calendar extends Component {
       icon: data.days[9].icon,
       isThisButtonVisible: false
     });
+    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 10)) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+
   }
   day11Click() {
     this.setState({
@@ -185,6 +280,12 @@ export default class Calendar extends Component {
       icon: data.days[10].icon,
       isThisButtonVisible: false
     });
+    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 11)) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+
   }
   day12Click() {
     this.setState({
@@ -196,6 +297,12 @@ export default class Calendar extends Component {
       icon: data.days[11].icon,    
       isThisButtonVisible: false
     });
+    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 12)) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+
   }
   day13Click() {
     this.setState({
@@ -207,6 +314,12 @@ export default class Calendar extends Component {
       icon: data.days[12].icon,
       isThisButtonVisible: false    
     });
+    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 13)) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+
   }
   day14Click() {
     this.setState({
@@ -218,6 +331,12 @@ export default class Calendar extends Component {
       icon: data.days[13].icon,
       isThisButtonVisible: false    
     });
+    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 14)) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+
   }
   day15Click() {
     this.setState({
@@ -229,6 +348,12 @@ export default class Calendar extends Component {
       icon: data.days[14].icon,
       isThisButtonVisible: false    
     });
+    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 15)) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+
   }
   day16Click() {
     this.setState({
@@ -240,6 +365,12 @@ export default class Calendar extends Component {
       icon: data.days[15].icon,
       isThisButtonVisible: false    
     });
+    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 16)) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+
   }
   day17Click() {
     this.setState({
@@ -248,7 +379,14 @@ export default class Calendar extends Component {
       value: data.days[16].id,
       name: data.days[16].name,
       text: data.days[16].text,
-      icon: data.days[16].icon    });
+      icon: data.days[16].icon    
+    });
+    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 17)) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+
   }
   day18Click() {
     this.setState({
@@ -260,6 +398,12 @@ export default class Calendar extends Component {
       icon: data.days[17].icon,
       isThisButtonVisible: false    
     });
+    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 18)) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+
   }
   day19Click() {
     this.setState({
@@ -271,6 +415,12 @@ export default class Calendar extends Component {
       icon: data.days[18].icon,
       isThisButtonVisible: false    
     });
+    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 19)) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+
   }
   day20Click() {
     this.setState({
@@ -282,6 +432,12 @@ export default class Calendar extends Component {
       icon: data.days[19].icon,
       isThisButtonVisible: false
     });
+        if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 20)) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+
   }
   day21Click() {
     this.setState({
@@ -293,6 +449,12 @@ export default class Calendar extends Component {
       icon: data.days[20].icon,    
       isThisButtonVisible: false
     });
+    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 21)) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+
   }
   day22Click() {
     this.setState({
@@ -301,7 +463,14 @@ export default class Calendar extends Component {
       value: data.days[21].id,
       name: data.days[21].name,
       text: data.days[21].text,
-      icon: data.days[21].icon    });
+      icon: data.days[21].icon    
+    });
+    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 22)) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+
   }
   day23Click() {
     this.setState({
@@ -313,6 +482,12 @@ export default class Calendar extends Component {
       icon: data.days[22].icon,  
       isThisButtonVisible: false
     });
+    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 23)) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+
   }
   day24Click() {
     this.setState({
@@ -324,6 +499,12 @@ export default class Calendar extends Component {
       icon: data.days[23].icon,  
       isThisButtonVisible: false
     });
+    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 24)) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
+
   }
   day25Click() {
     this.setState({
@@ -335,6 +516,11 @@ export default class Calendar extends Component {
       icon: data.days[24].icon,
       isThisButtonVisible: false,
     });
+    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 25)) {
+      console.log(true)
+    } else {
+      console.log(false)
+    }
   }
 
   goBack() {
@@ -358,7 +544,7 @@ export default class Calendar extends Component {
   render() {
     return (
       <div className="Calendar2">
-        <div class="snow" />
+        <div className="snow" />
         {this.state.isThisButtonVisible ? (
           <button className="AboutButton" onClick={this.aboutClick}>
             ?
@@ -374,10 +560,11 @@ export default class Calendar extends Component {
         </div>
         {this.state.isCalendarVisible ? (
           <table className="calendar-table">
+            <tbody>
             <tr className="calendar-table__row">
-              <td onClick={this.day1Click} className="calendar-table__day calendar-table--red">1</td>
-              <td onClick={this.day2Click} className="calendar-table__day calendar-table--red">2</td>
-              <td onClick={this.day3Click} className="calendar-table__day calendar-table--red">3</td>
+              <td onClick={this.day1Click} className="calendar-table__day calendar-table--red" id="one">1</td>
+              <td onClick={this.day2Click} className="calendar-table__day calendar-table--red" id="two">2</td>
+              <td onClick={this.day3Click} className="calendar-table__day calendar-table--red" id="three">3</td>
             </tr>
             <tr className="calendar-table__row">
               <td onClick={this.day4Click} className="calendar-table__day calendar-table--white">4</td>
@@ -417,10 +604,11 @@ export default class Calendar extends Component {
             <tr className="calendar-table__row">
               <td onClick={this.day25Click} className="calendar-table__day calendar-table--" colSpan="3">25</td>
             </tr>
+            </tbody>
           </table>
         ) : null}
 
-        {this.state.isDayVisible ? (
+        {this.state.todayIsCorrectDay ? (
           <Day
             value={this.state.value}
             name={this.state.name}

@@ -17,7 +17,8 @@ export default class Day extends Component {
 
   render() {
     return (
-      <div className="Day">
+
+      <div className="Day" id="day">
         <div className="Day__material">
           <p className="Day__number">Day {this.props.value}</p>
           <p className="Day__name">{this.props.name}</p>
@@ -26,7 +27,7 @@ export default class Day extends Component {
           <p className="Day_icon"></p>
         </div>
         <button className="backButton" onClick={this.props.goBack.bind(this)}>back</button>
-      </div>
+</div>
     );
   }
 }
