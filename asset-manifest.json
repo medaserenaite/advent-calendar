@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/medaserenaite/advent-calendar/static/css/main.69b1a6c7.chunk.css",
-    "main.js": "/medaserenaite/advent-calendar/static/js/main.2c497680.chunk.js",
-    "main.js.map": "/medaserenaite/advent-calendar/static/js/main.2c497680.chunk.js.map",
-    "runtime~main.js": "/medaserenaite/advent-calendar/static/js/runtime~main.5f8591a0.js",
-    "runtime~main.js.map": "/medaserenaite/advent-calendar/static/js/runtime~main.5f8591a0.js.map",
-    "static/js/2.89548203.chunk.js": "/medaserenaite/advent-calendar/static/js/2.89548203.chunk.js",
-    "static/js/2.89548203.chunk.js.map": "/medaserenaite/advent-calendar/static/js/2.89548203.chunk.js.map",
-    "index.html": "/medaserenaite/advent-calendar/index.html",
-    "precache-manifest.da24b40f3e2ee2d87e249b689f151d85.js": "/medaserenaite/advent-calendar/precache-manifest.da24b40f3e2ee2d87e249b689f151d85.js",
-    "service-worker.js": "/medaserenaite/advent-calendar/service-worker.js",
-    "static/css/main.69b1a6c7.chunk.css.map": "/medaserenaite/advent-calendar/static/css/main.69b1a6c7.chunk.css.map"
+    "main.css": "/advent-calendar/static/css/main.69b1a6c7.chunk.css",
+    "main.js": "/advent-calendar/static/js/main.0abdc392.chunk.js",
+    "main.js.map": "/advent-calendar/static/js/main.0abdc392.chunk.js.map",
+    "runtime~main.js": "/advent-calendar/static/js/runtime~main.e9917ddf.js",
+    "runtime~main.js.map": "/advent-calendar/static/js/runtime~main.e9917ddf.js.map",
+    "static/js/2.89548203.chunk.js": "/advent-calendar/static/js/2.89548203.chunk.js",
+    "static/js/2.89548203.chunk.js.map": "/advent-calendar/static/js/2.89548203.chunk.js.map",
+    "index.html": "/advent-calendar/index.html",
+    "precache-manifest.8f2534b8174ee83588b760f44b5ab731.js": "/advent-calendar/precache-manifest.8f2534b8174ee83588b760f44b5ab731.js",
+    "service-worker.js": "/advent-calendar/service-worker.js",
+    "static/css/main.69b1a6c7.chunk.css.map": "/advent-calendar/static/css/main.69b1a6c7.chunk.css.map"
   }
 }
