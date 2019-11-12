@@ -30,15 +30,24 @@ export default class Calendar extends Component {
       month:today.getMonth()+1,
       day:today.getDate(),
       today:this.state.today,
+      // value: data.days[x-1].id,
+      // name: data.days[x-1].name,
+      // text: data.days[x-1].text,
+      // icon: data.days[x-1].icon,
     })
+
+    console.log(data.days[0])
   }
 
   sampleDayClick(x) {
-    console.log("click")
-    console.log(x)
+    this.setState({
+      // value: data.days[x-1].id,
+      // name: data.days[x-1].name,
+      // text: data.days[x-1].text,
+      // icon: data.days[x-1].icon,
+    })
+    this.setConditionsForDay();
 
-    //sets: isCalendarVisible: false, isDayVisible: true, isQButtonVisible: false,
-    this.sampleFun();
     this.ifCheck(
       this.state.x = x,
       );
@@ -64,7 +73,7 @@ export default class Calendar extends Component {
     });
   }
 
-  sampleFun() {
+    setConditionsForDay() {
     this.setState({
       isCalendarVisible: false,
       isDayVisible: true,
@@ -73,22 +82,25 @@ export default class Calendar extends Component {
   }
 
   ifCheck() {
-    console.log("x " + this.state.x)
-    // this.setState({
-    //   value: data.days[this.state.i].id,
-    //   name: data.days[this.state.i].name,
-    //   text: data.days[this.state.i].text,
-    //   icon: data.days[this.state.i].icon,
-    // });
-    // console.log(this.state.day)
-    // console.log("val   " + this.state.value)
-    if((this.state.day === 12)) {
-      // if((this.state.day === this.state.i)) {
-      console.log("whoooo")
+    //logs
+    console.log(this.state.x)
+    //logs
+    // console.log(">> " + data.days[this.state.x].id)
+
+
+    if((this.state.day === this.state.x)) {
+      console.log("tru")
+      // let i = this.state.x; 
+console.log("inside >> " + data.days[this.state.x].id)
       this.setState({
         todayIsCorrectDay: true,
+        value:data.days[this.state.x-1].id,
+        name:data.days[this.state.x-1].name,
+        text:data.days[this.state.x-1].text,
+        icon:data.days[this.state.x-1].icon,
       })
     } else {
+      console.log("nah")
       this.setState({
         todayIsCorrectDay: false,
       })
