@@ -5,9 +5,6 @@ import Day from "./Day";
 import data from "../data.json";
 import About from "./About";
 
-// var today = new Date();
-// var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-
 export default class Calendar extends Component {
   constructor(props) {
     super(props);
@@ -59,29 +56,6 @@ export default class Calendar extends Component {
       day:today.getDate(),
       today:this.state.today,
     })
-
-    //   console.log(data.days[0].name)
-    // console.log(data.days[0].id)
-    // this.forceUpdate(this.aboutClick);
-    // var today = new Date();
-    // console.log("today:     " + today)
-    // var future = new Date();
-    // var year = today.getFullYear();
-    // var month = today.getMonth()+1;
-    // var day = today.getDate();
-    // console.log(year)
-    // console.log(month)
-    // console.log(day)
-    // var date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
-    // console.log("date " + date)
-    // if(today.getFullYear() === 2019 && today.getMonth() === 10 && today.getDate() === 9) {
-    //     if(date === 2019 + '-' + 10 + '-' + 10){
-    //     console.log("true")
-    // } else {
-    //     // document.getElementById('dayday').style.color = 'yellow';
-    //     console.log("false")
-    // }
-    //   }
   }
 
   day1Click() {
@@ -104,7 +78,6 @@ export default class Calendar extends Component {
       this.setState({
         todayIsCorrectDay: true,
       })
-      // console.log("!!!  " + this.state.todayIsCorrectDay)
     } else {
       console.log(false)
       console.log(true)
