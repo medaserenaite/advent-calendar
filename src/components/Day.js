@@ -19,6 +19,7 @@ export default class Day extends Component {
     return (
 
       <div className="Day" id="day">
+        <button className="backButton" onClick={this.props.goBack.bind(this)}>back</button>
         <div className="Day__material">
           <p className="Day__number">Day {this.props.value}</p>
           <p className="Day__name">{this.props.name}</p>
