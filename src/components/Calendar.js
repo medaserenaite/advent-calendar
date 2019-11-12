@@ -12,7 +12,7 @@ export default class Calendar extends Component {
       isCalendarVisible: true,
       isAboutVisible: false,
       aboutCounter: 0,
-      isThisButtonVisible: true,
+      isQButtonVisible: true,
       today: 0,
       year: 0,
       month: 0,
@@ -61,32 +61,32 @@ export default class Calendar extends Component {
   day1Click() {
     this.setState({
       isCalendarVisible: false,
-      isDayVisible: true,
+      isDayVisible: false,
       value: data.days[0].id,
       name: data.days[0].name,
       text: data.days[0].text,
       icon: data.days[0].icon,
-      isThisButtonVisible: false,
-      today: this.state.today,
-      year: this.state.year,
-      month: this.state.month,
-      day: this.state.day,
-      todayIsCorrectDay: this.state.todayIsCorrectDay,
+      isQButtonVisible: false,
+      // today: this.state.today,
+      // year: this.state.year,
+      // month: this.state.month,
+      // day: this.state.day,
+      // todayIsCorrectDay: this.state.todayIsCorrectDay,
     });
-    if((this.state.year === 2019) && (this.state.month === 11) && (this.state.day >= 11)) {
+    if((this.state.year >= 2019) && (this.state.month >= 11) && (this.state.day >= 11)) {
       console.log(true)
       this.setState({
         todayIsCorrectDay: true,
       })
     } else {
-      console.log(false)
-      console.log(true)
+      // console.log(false)
+      // console.log(true)
       this.setState({
         todayIsCorrectDay: false,
       })
     }
 
-      console.log("!!!  " + this.state.todayIsCorrectDay)
+      // console.log("!!!  " + this.state.todayIsCorrectDay)
   }
   day2Click() {
     this.setState({
@@ -96,9 +96,9 @@ export default class Calendar extends Component {
       name: data.days[1].name,
       text: data.days[1].text,
       icon: data.days[1].icon,
-      isThisButtonVisible: false,
+      isQButtonVisible: false,
     });
-    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 2)) {
+    if((this.state.year >= 2019) && (this.state.month >= 11) && (this.state.day >= 11)) {
       console.log(true)
       this.setState({
         todayIsCorrectDay: true,
@@ -118,7 +118,7 @@ export default class Calendar extends Component {
       name: data.days[2].name,
       text: data.days[2].text,
       icon: data.days[2].icon,
-      isThisButtonVisible: false
+      isQButtonVisible: false
     });
     if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 3)) {
       console.log(true)
@@ -135,7 +135,7 @@ export default class Calendar extends Component {
       name: data.days[3].name,
       text: data.days[3].text,
       icon: data.days[3].icon,
-      isThisButtonVisible: false
+      isQButtonVisible: false
     });
     if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 4)) {
       console.log(true)
@@ -152,7 +152,7 @@ export default class Calendar extends Component {
       name: data.days[4].name,
       text: data.days[4].text,
       icon: data.days[4].icon,
-      isThisButtonVisible: false
+      isQButtonVisible: false
     });
         if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 5)) {
       console.log(true)
@@ -169,7 +169,7 @@ export default class Calendar extends Component {
       name: data.days[5].name,
       text: data.days[5].text,
       icon: data.days[5].icon,
-      isThisButtonVisible: false
+      isQButtonVisible: false
     });
     if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 6)) {
       console.log(true)
@@ -186,7 +186,7 @@ export default class Calendar extends Component {
       name: data.days[6].name,
       text: data.days[6].text,
       icon: data.days[6].icon,
-      isThisButtonVisible: false
+      isQButtonVisible: false
     });
     if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 7)) {
       console.log(true)
@@ -203,7 +203,7 @@ export default class Calendar extends Component {
       name: data.days[7].name,
       text: data.days[7].text,
       icon: data.days[7].icon,
-      isThisButtonVisible: false
+      isQButtonVisible: false
     });
     if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 8)) {
       console.log(true)
@@ -220,7 +220,7 @@ export default class Calendar extends Component {
       name: data.days[8].name,
       text: data.days[8].text,
       icon: data.days[8].icon,
-      isThisButtonVisible: false
+      isQButtonVisible: false
     });
     if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 9)) {
       console.log(true)
@@ -237,7 +237,7 @@ export default class Calendar extends Component {
       name: data.days[9].name,
       text: data.days[9].text,
       icon: data.days[9].icon,
-      isThisButtonVisible: false
+      isQButtonVisible: false
     });
     if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 10)) {
       console.log(true)
@@ -254,7 +254,7 @@ export default class Calendar extends Component {
       name: data.days[10].name,
       text: data.days[10].text,
       icon: data.days[10].icon,
-      isThisButtonVisible: false
+      isQButtonVisible: false
     });
     if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 11)) {
       console.log(true)
@@ -271,7 +271,7 @@ export default class Calendar extends Component {
       name: data.days[11].name,
       text: data.days[11].text,
       icon: data.days[11].icon,    
-      isThisButtonVisible: false
+      isQButtonVisible: false
     });
     if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 12)) {
       console.log(true)
@@ -288,7 +288,7 @@ export default class Calendar extends Component {
       name: data.days[12].name,
       text: data.days[12].text,
       icon: data.days[12].icon,
-      isThisButtonVisible: false    
+      isQButtonVisible: false    
     });
     if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 13)) {
       console.log(true)
@@ -305,7 +305,7 @@ export default class Calendar extends Component {
       name: data.days[13].name,
       text: data.days[13].text,
       icon: data.days[13].icon,
-      isThisButtonVisible: false    
+      isQButtonVisible: false    
     });
     if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 14)) {
       console.log(true)
@@ -322,7 +322,7 @@ export default class Calendar extends Component {
       name: data.days[14].name,
       text: data.days[14].text,
       icon: data.days[14].icon,
-      isThisButtonVisible: false    
+      isQButtonVisible: false    
     });
     if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 15)) {
       console.log(true)
@@ -339,7 +339,7 @@ export default class Calendar extends Component {
       name: data.days[15].name,
       text: data.days[15].text,
       icon: data.days[15].icon,
-      isThisButtonVisible: false    
+      isQButtonVisible: false    
     });
     if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 16)) {
       console.log(true)
@@ -372,7 +372,7 @@ export default class Calendar extends Component {
       name: data.days[17].name,
       text: data.days[17].text,
       icon: data.days[17].icon,
-      isThisButtonVisible: false    
+      isQButtonVisible: false    
     });
     if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 18)) {
       console.log(true)
@@ -389,7 +389,7 @@ export default class Calendar extends Component {
       name: data.days[18].name,
       text: data.days[18].text,
       icon: data.days[18].icon,
-      isThisButtonVisible: false    
+      isQButtonVisible: false    
     });
     if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 19)) {
       console.log(true)
@@ -406,7 +406,7 @@ export default class Calendar extends Component {
       name: data.days[19].name,
       text: data.days[19].text,
       icon: data.days[19].icon,
-      isThisButtonVisible: false
+      isQButtonVisible: false
     });
         if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 20)) {
       console.log(true)
@@ -423,7 +423,7 @@ export default class Calendar extends Component {
       name: data.days[20].name,
       text: data.days[20].text,
       icon: data.days[20].icon,    
-      isThisButtonVisible: false
+      isQButtonVisible: false
     });
     if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 21)) {
       console.log(true)
@@ -456,7 +456,7 @@ export default class Calendar extends Component {
       name: data.days[22].name,
       text: data.days[22].text,
       icon: data.days[22].icon,  
-      isThisButtonVisible: false
+      isQButtonVisible: false
     });
     if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 23)) {
       console.log(true)
@@ -473,7 +473,7 @@ export default class Calendar extends Component {
       name: data.days[23].name,
       text: data.days[23].text,
       icon: data.days[23].icon,  
-      isThisButtonVisible: false
+      isQButtonVisible: false
     });
     if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 24)) {
       console.log(true)
@@ -490,7 +490,7 @@ export default class Calendar extends Component {
       name: data.days[24].name,
       text: data.days[24].text,
       icon: data.days[24].icon,
-      isThisButtonVisible: false,
+      isQButtonVisible: false,
     });
     if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 25)) {
       console.log(true)
@@ -502,9 +502,10 @@ export default class Calendar extends Component {
   goBack() {
     this.setState({
       isCalendarVisible: true,
-      isDayVisible: false,
+      // isDayVisible: false,
+      todayIsCorrectDay: false,
       isAboutVisible: false,
-      isThisButtonVisible: true,
+      isQButtonVisible: true,
     });
   }
 
@@ -513,7 +514,7 @@ export default class Calendar extends Component {
       isCalendarVisible: false,
       isDayVisible: false,
       isAboutVisible: true,
-      isThisButtonVisible: false
+      isQButtonVisible: false
     });
   }
 
@@ -521,7 +522,7 @@ export default class Calendar extends Component {
     return (
       <div className="Calendar2">
         <div className="snow" />
-        {this.state.isThisButtonVisible ? (
+        {this.state.isQButtonVisible ? (
           <button className="AboutButton" onClick={this.aboutClick}>
             ?
           </button>
