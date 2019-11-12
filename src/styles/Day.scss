@@ -1,12 +1,9 @@
-// @import url("https://fonts.googleapis.com/css?family=Nunito&display=swap");
-// @import url("https://fonts.googleapis.com/css?family=Arvo&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Dosis&display=swap");
 
 .Day {
   padding: 1em;
   width: 100%;
   margin: auto auto;
-  border:solid 3px;
 
   &__image {
     display: block;
@@ -39,32 +36,8 @@
     letter-spacing: 2px;
     font-size: 20px;
     text-align: justify;
-    // text-shadow: 1px 1px rgb(40, 40, 40);
   }
 
-  &__icon {
-    display: block;
-    margin: auto auto;
-    height: 100px;
-    width: 100px;
-    border-radius: 50px;
-    background: url("https://via.placeholder.com/150");
-  }
-  &__icon:active {
-    background-image: url("");
-  }
-
-  .backButton {
-    background-color: goldenrod;
-    border: 2px dashed whitesmoke;
-    display: block;
-    margin: auto auto;
-    margin-top: 20px;
-    color: white;
-    padding: 1em;
-    border-radius: 15px;
-    font-size: 14px;
-  }
 }
 
 @media all and (min-width: 501px) {
@@ -104,7 +77,6 @@
       letter-spacing: 2px;
       font-size: 20px;
       text-align: justify;
-      // text-shadow: 1px 1px rgb(40, 40, 40);
     }
 
     &__icon {
