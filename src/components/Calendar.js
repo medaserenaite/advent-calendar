@@ -2,7 +2,6 @@ import React from "react";
 import { Component } from "react";
 import "../styles/Calendar.scss";
 import Day from "./Day";
-// import DateCountdown from "react-date-countdown-timer";
 import data from "../data.json";
 import About from "./About";
 
@@ -100,7 +99,7 @@ export default class Calendar extends Component {
       day: this.state.day,
       todayIsCorrectDay: this.state.todayIsCorrectDay,
     });
-    if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day >= 1)) {
+    if((this.state.year === 2019) && (this.state.month === 11) && (this.state.day >= 11)) {
       console.log(true)
       this.setState({
         todayIsCorrectDay: true,
@@ -128,9 +127,13 @@ export default class Calendar extends Component {
     });
     if((this.state.year === 2019) && (this.state.month === 12) && (this.state.day === 2)) {
       console.log(true)
-      document.getElementById('day').style = 'hidden';
+      this.setState({
+        todayIsCorrectDay: true,
+      })
     } else {
-      console.log(false)
+      this.setState({
+        todayIsCorrectDay: false,
+      })
     }
 
   }
