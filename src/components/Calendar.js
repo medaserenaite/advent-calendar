@@ -578,7 +578,7 @@ export default class Calendar extends Component {
               <td onClick={this.day24Click} className="calendar-table__day calendar-table--white">24</td>
             </tr>
             <tr className="calendar-table__row">
-              <td onClick={this.day25Click} className="calendar-table__day calendar-table--" colSpan="3">25</td>
+              <td onClick={this.day25Click} className="calendar-table__day calendar-table--red" colSpan="3">25</td>
             </tr>
             </tbody>
           </table>
